@@ -32,8 +32,8 @@ jobs:
           PROJECTDIR=$(pwd)
           cd /tmp && wget http://ftp.fau.de/ctan/systems/texlive/tlnet/install-tl-unx.tar.gz
           mkdir myinstall_dir
-          tar -xvzf install-tl-unx.tar.gz --directory myinstall_dir
-          cd myinstall_dir
+          tar -xvzf install-tl-unx.tar.gz
+          cd install-tl-20230309
           chmod +x install-tl
           sudo ./install-tl --profile=$PROJECTDIR/texlive.profile
           PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
