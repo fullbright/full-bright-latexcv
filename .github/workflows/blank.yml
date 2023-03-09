@@ -31,6 +31,7 @@ jobs:
         run: |
           PROJECTDIR=$(pwd)
           cd /tmp && wget http://ftp.fau.de/ctan/systems/texlive/tlnet/install-tl-unx.tar.gz
+          mkdir myinstall_dir
           tar -xvzf install-tl-unx.tar.gz --directory myinstall_dir
           cd myinstall_dir
           chmod +x install-tl
